@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "a59daa81-1dc3-4f74-857f-d8f4cb7610cc",
+		"name": "library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST - /api/libraries",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"libraryName\": \"test library\",\r\n    \"aisles\": [{\r\n        \"aisleName\" : \"side 1\",\r\n        \"books\" : [\r\n            {\r\n                \"bookName\": \"book 1\"\r\n            }\r\n        ]\r\n    }]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/libraries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"libraries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - /api/libraries/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"libraryName\": \"CENTRAL LIBRARY\",\r\n    \"aisles\": [{\r\n        \"aisleName\" : \"NATURAL HISTORY\",\r\n        \"books\" : [\r\n            {\r\n                \"bookName\": \"book 1\"\r\n            },\r\n            {\r\n                \"bookName\": \"book 5\"\r\n            },\r\n            {\r\n                \"bookName\": \"book 6\"\r\n            }\r\n        ]\r\n    }, \r\n    {\r\n        \"aisleName\" : \"SCIENCE\",\r\n        \"books\" : [\r\n            {\r\n                \"bookName\": \"book 4\"\r\n            },\r\n            {\r\n                \"bookName\": \"book 5\"\r\n            },\r\n            {\r\n                \"bookName\": \"book 3\"\r\n            }\r\n        ]\r\n    }]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/libraries/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"libraries",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - /api/libraries/aisles/{aisleId}/books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/libraries/central-library/natural-history/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"libraries",
+						"central-library",
+						"natural-history",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
