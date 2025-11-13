@@ -11,6 +11,10 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+/* 4.  Create Entity name Book with the following attribute:
+	int bookId
+	String bookName    
+*/    
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,5 +25,7 @@ public class Book {
 
     @ManyToMany(mappedBy = "books")
     @ToString.Exclude @EqualsAndHashCode.Exclude
+    // 6.  Create Many to Many relationship between Aisle and Book.  Many aisles will have many book. 
+    //     You might need additional things to add.
     private Set<Aisle> aisles = new HashSet<>();
 }
