@@ -11,6 +11,10 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+/* 3.  Create Entity named Aisle with the following attributes:
+	int aisleId
+	String isleName
+*/    
 public class Aisle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
