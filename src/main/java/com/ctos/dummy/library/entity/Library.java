@@ -17,6 +17,10 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+/*  2.  Create Entity named Library with the following attributes:
+	int libraryId
+	String libraryName
+*/
 public class Library {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
