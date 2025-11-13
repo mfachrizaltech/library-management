@@ -9,9 +9,10 @@ Use Lombok and Java Streams.
 * Java 25
 
 # Build The Project
+* git clone https://github.com/mfachrizaltech/library-management
 * cd library-management
-* ./gradlew clean build
-* ./gradlew bootRun
+* gradlew clean build
+* gradlew bootRun
 
 # Import The postman
 * Goto postman directory

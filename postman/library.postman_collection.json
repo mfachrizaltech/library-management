@@ -67,7 +67,7 @@
 			"response": []
 		},
 		{
-			"name": "GET - /api/libraries/aisles/{aisleId}/books",
+			"name": "GET - /api/libraries/central-library/natural-history/books",
 			"request": {
 				"method": "GET",
 				"header": [],
