@@ -1,6 +1,6 @@
 # library-management
 * library-management is the spring boot based rest api to managing the library 
-* *Dependencies: spring-web spring-data-jpa
+* Dependencies: spring-web spring-data-jpa
 Use Lombok and Java Streams.
 
 # Tech Steck
