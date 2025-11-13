@@ -32,6 +32,7 @@ public class Library {
     @OneToMany(mappedBy = "library", cascade = CascadeType.ALL, orphanRemoval = true)
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
+	// 5.  Create One to Many relationship between Library and Aisle.  One library have many aisles.
     private List<Aisle> aisles = new ArrayList<>();
 
     public void addAisle(Aisle aisle) {
